@@ -4,9 +4,7 @@ const App = () => {
   const [value, setValue] = useState(10)
 
   // function hello returns a function, that can be parameterized
-  const hello = (who) => {
-      return () => console.log('hello', who)
-  }
+  const hello = (who) => () => console.log('hello', who)
 
   return (
     <div>
