@@ -5,8 +5,7 @@ const App = () => {
 
   // function hello returns a function, that can be parameterized
   const hello = (who) => {
-      const handler = () => console.log('hello', who)
-      return handler
+      return () => console.log('hello', who)
   }
 
   return (
